@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/northwind?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <mapping resource="urp/model/pojos/Orders.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Customers.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Categories.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Region.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Orderdetails.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Shippers.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Suppliers.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Territories.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Customerdemographics.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Employees.hbm.xml"/>
+    <mapping resource="urp/model/pojos/Products.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
